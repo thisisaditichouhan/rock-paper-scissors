@@ -1,4 +1,4 @@
-body{
+.mainBody{
     background-color: #333;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -6,6 +6,9 @@ body{
     align-items: center;
     flex-direction: column;
     
+}
+body{
+    background-color: #333;   
 }
 h1{
     margin-top: 5rem;
@@ -20,14 +23,46 @@ h1{
 #computer{
     color:cyan
 }
+#reset{
+    position: top;
+    width:50px;
+    height: 5px;
+    text-align: center;
+    border-radius: 0px;
+    background-color: red;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.Score{
+    display: inline;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: -1px;
+}
 
 button{
     border-radius: 1000px;
-    /* font-family: 'Courier New', Courier, monospace; */
     font-weight: bold;
     padding-bottom: 1rem;
     padding-top: 1rem;
     width: 120px;
     margin-top: 1rem;
     background-color: rgba(75, 154, 112, 0.729);
+}
+
+@media (min-width: 600px) {
+    button {
+        width: 120px;
+        padding: 1rem;
+    }
+
+    #reset {
+        width: 50px;
+        padding: 1rem;
+    }
+
 }
